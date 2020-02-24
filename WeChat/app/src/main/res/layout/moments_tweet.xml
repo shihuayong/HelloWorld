@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MomentsActivity"
+    tools:showIn="@layout/activity_moments">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 左侧：发送者头像 -->
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/tweet_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tweet_avatar_image_description" />
+        </FrameLayout>
+
+        <!-- 右侧：推文内容 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 名称 -->
+            <TextView
+                android:id="@+id/tweet_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="我是张三" />
+
+            <!-- 名称 -->
+            <TextView
+                android:id="@+id/tweet_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="我是内容" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
